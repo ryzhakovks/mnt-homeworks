@@ -12,7 +12,7 @@ _________________________________________________
 ```
 ---
   - name: clickhouse 
-    src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
+    src: git@github.com:ryzhakovks/ansible-clickhouse.git
     scm: git
     version: "1.11.0"
 ```

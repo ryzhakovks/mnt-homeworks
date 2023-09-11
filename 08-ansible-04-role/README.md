@@ -67,7 +67,7 @@ __________________________________________________
 {{ vector_config | to_nice_yaml }}
 kirill@kirillPC:~/DevOps/CI/08-ansible-03-role$ cat roles/vector/templates/vector.service.j2 
 [Unit]
-Description=Vector service
+Description=Vector service 
 After=network.target
 Requires=network-online.target
 [Service]

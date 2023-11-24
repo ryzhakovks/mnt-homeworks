@@ -1,4 +1,8 @@
 ---
+  - name: clickhouse-role
+    src: https://github.com/ryzhakovks/clickhouse-role.git
+    scm: git
+    version: "v1"
   - name: vector-role
     src: https://github.com/ryzhakovks/vector-role.git
     scm: git

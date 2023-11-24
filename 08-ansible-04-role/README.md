@@ -59,7 +59,7 @@ root@server1:~/ansible_role/roles# ansible-galaxy role init vector-role --force
 8. Ссылки на роли
   - [vector-role](https://github.com/ryzhakovks/vector-role.git)
   - [lighthouse-role](https://github.com/ryzhakovks/lighthouse-role.git)
-  - [clickhouse-role](https://github.com/AlexeySetevoi/ansible-clickhouse.git)
+  - [clickhouse-role](https://github.com/ryzhakovks/clickhouse-role)
 
 9. Переработал
 ```bash

@@ -42,7 +42,7 @@ ansible-04-role
 root@server1:~/ansible_role# ansible-galaxy install -r requirements.yml -p roles
 Starting galaxy role install process
 - extracting clickhouse to /root/ansible_role/roles/clickhouse
-- clickhouse (1.11.0) was installed successfully
+- clickhouse (1.13.0) was installed successfully
 ```
 3. Созданы новые каталоги
 ```bash
@@ -57,9 +57,9 @@ root@server1:~/ansible_role/roles# ansible-galaxy role init vector-role --force
 - Шаги 4 - 7 выполнены
 
 8. Ссылки на роли
-  - [vector-role](https://github.com/Valdem88/vector-role.git)
-  - [lighthouse-role](https://github.com/Valdem88//lighthouse-role.git)
-  - [clickhouse-role](https://github.com/Valdem88/clickhouse-role.git)
+  - [vector-role](https://github.com/ryzhakovks/vector-role.git)
+  - [lighthouse-role](https://github.com/ryzhakovks/lighthouse-role.git)
+  - [clickhouse-role](https://github.com/AlexeySetevoi/ansible-clickhouse.git)
 
 9. Переработал
 ```bash
@@ -113,7 +113,7 @@ root@server1:~/ansible_role/roles# ansible-galaxy role init vector-role --force
         msg: "http://{{ ansible_host }}/#http://{{ hostvars['clickhouse-01'].ansible_host }}:8123/?user={{ clickhouse_user }}"
 ```
 
-10. Добавил файл [requirements.yml](https://github.com/Valdem88/dev-17_ansible-04-role-yakovlev_vs/blob/main/requirements.yml)
+10. Добавил файл requirements.yml
 
 
 11. Установил роли
@@ -137,14 +137,7 @@ root@server1:~/ansible_role# ansible-playbook -i inventory/test.yml site.yml --d
 
 ![](pic/ansible_job.jpg)
 
----
 
-  - [playbook](https://github.com/Valdem88/dev-17_ansible-04-role-yakovlev_vs/blob/main/site.yml)
-  - [vector-role](https://github.com/Valdem88/vector-role.git)
-  - [lighthouse-role](https://github.com/Valdem88//lighthouse-role.git)
-  - [clickhouse-role](https://github.com/Valdem88/clickhouse-role.git)
-
----
 
 ### Как оформить ДЗ?
 

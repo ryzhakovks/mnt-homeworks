@@ -59,5 +59,5 @@ Workflow для всех остальных типов задач:
 
 ## Выгруженные схемы Workflow:
 
-* [bug workflow](https://github.com/DemoniumBlack/fedorchukds-devops-33-22/blob/main/Workflows/Bug.xml)
-* [other workflow](https://github.com/DemoniumBlack/fedorchukds-devops-33-22/blob/main/Workflows/Other.xml)
+* [bug workflow](https://github.com/ryzhakovks/mnt-homeworks/blob/MNT-video/09-ci-01-intro/Workflows/Bug.xml)
+* [other workflow](https://github.com/ryzhakovks/mnt-homeworks/blob/MNT-video/09-ci-01-intro/Workflows/Other.xml)

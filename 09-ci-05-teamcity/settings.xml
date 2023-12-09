@@ -123,7 +123,7 @@ under the License.
     </server>
     -->
     <server>
-      <id>nexus</id>
+      <id>nexus01</id>
       <username>admin</username>
       <password>admin123</password>
     </server>

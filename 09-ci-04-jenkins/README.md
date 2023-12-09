@@ -26,13 +26,13 @@ pip3 install --user "molecule==3.5.2" "molecule_docker"
 molecule --version
 ```
 
-Declarative Pipeline Job сделана, [скриншот выполнения](PL_success.JPG). Скрипт джобы перенесен в репозиторий [здесь](pipeline/Jenkinsfile) и в основной репозиторий ansible-vector-role [здесь](https://github.com/AirDRoN-lab/ansible-vector-role/blob/main/Jenkinsfile).
+Declarative Pipeline Job сделана, [скриншот выполнения](PL_success.JPG). Скрипт джобы перенесен в репозиторий [здесь](pipeline/Jenkinsfile) и в основной репозиторий ansible-vector-role [здесь](https://github.com/ryzhakovks/vector-role/blob/main/Jenkinsfile).
 
 Multibranch Pipeline Pipeline Job сделана, [скриншот выполнения](FJ_success.JPG).
 
-Scripted Pipeline создан, настроен параметр prod_run (тип boolen). Скрипт выложен в репозитории [здесь](./pipeline/ScriptedJenkinsfile) и в основной репозиторий ansible-vector-role [здесь](https://github.com/AirDRoN-lab/ansible-vector-role/blob/main/ScriptedJenkinsfile). Скриншот выполнения pipeline [здесь](SCpipeline__success.JPG).
+Scripted Pipeline создан, настроен параметр prod_run (тип boolen). Скрипт выложен в репозитории [здесь](./pipeline/ScriptedJenkinsfile) и в основной репозиторий ansible-vector-role [здесь](https://github.com/ryzhakovks/vector-role/blob/main/ScriptedJenkinsfile). Скриншот выполнения pipeline [здесь](SCpipeline__success.JPG).
 
-Итоговый [скриншот](All_pipeline.JPG) выполненных pipeline. Репозиторий с использованной ролью ansible-vector-role https://github.com/AirDRoN-lab/ansible-vector-role
+Итоговый [скриншот](All_pipeline.JPG) выполненных pipeline. Репозиторий с использованной ролью ansible-vector-role https://github.com/ryzhakovks/vector-role
 
 
 Во время отладки на ноде Jenkins были выполнены команды:

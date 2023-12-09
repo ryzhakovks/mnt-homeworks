@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "08.05 Тестирование Roles"
+
 
 ## Подготовка к выполнению
 1. Установите molecule: `pip3 install "molecule==3.5.2"`
@@ -63,8 +63,8 @@ INFO     Initialized scenario in /home/vagrant/ansible2-netology/playbook/roles/
 
 5. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 
-Добавлен тэг 1.1.0, ветка main, репозиторий https://github.com/AirDRoN-lab/ansible-vector-role/tree/main
-STDOUT выполнения здесь https://github.com/AirDRoN-lab/ansible-vector-role/blob/main/Molecule_stdout.txt
+Добавлен тэг 1.1.0, ветка main, репозиторий https://github.com/ryzhakovks/vector-role/tree/main
+STDOUT выполнения здесь https://github.com/ryzhakovks/vector-role/blob/main/Molecule_stdout.txt
 
 ### Tox
 
@@ -114,7 +114,7 @@ setenv =
 
 5. Создайте облегчённый сценарий для `molecule` с драйвером `molecule_podman`. Проверьте его на исполнимость.
 
-Создан, выложен здесь: https://github.com/AirDRoN-lab/ansible-vector-role/blob/Task1_Tox_testing_wPodman/molecule/compatibility/molecule.yml
+Создан, выложен здесь: https://github.com/ryzhakovks/vector-role/blob/Task1_Tox_testing_wPodman/molecule/compatibility/molecule.yml
 
 6. Пропишите правильную команду в `tox.ini` для того чтобы запускался облегчённый сценарий.
 
@@ -124,7 +124,7 @@ setenv =
 
 Все, ок. 
 
-Полный вывод в данной файле https://github.com/AirDRoN-lab/ansible-vector-role/blob/Task1_Tox_testing_wPodman/Tox_stdout.txt
+Полный вывод в данной файле https://github.com/ryzhakovks/vector-role/blob/Task1_Tox_testing_wPodman/Tox_stdout.txt
 Краткий ниже:
 
 ```
@@ -138,7 +138,7 @@ ________________________________________________________________ summary _______
 
 9. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 
-Тег не добавлен, т.к. конфигурация заточена под podman и tox. Но создана отдельная ветка Task1_Tox_testing_wPodman, https://github.com/AirDRoN-lab/ansible-vector-role/tree/Task1_Tox_testing_wPodman 
+Тег не добавлен, т.к. конфигурация заточена под podman и tox. Но создана отдельная ветка Task1_Tox_testing_wPodman, https://github.com/ryzhakovks/vector-role/tree/Task1_Tox_testing_wPodman 
 
 После выполнения у вас должно получится два сценария molecule и один tox.ini файл в репозитории. Ссылка на репозиторий являются ответами на домашнее задание. Не забудьте указать в ответе теги решений Tox и Molecule заданий.
 

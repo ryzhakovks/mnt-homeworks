@@ -1,17 +1,23 @@
-node("linux"){
-    stage("Git checkout"){
-        git credentialsId: '5ac0095d-0185-431b-94da-09a0ad9b0e2c', url: 'git@github.com:aragastmatb/example-playbook.git'
+pipeline {
+    agent {
+            label 'linux'
     }
-    stage("Sample define secret_check"){
-        secret_check=true
-    }
-    stage("Run playbook"){
-        if (secret_check){
-            sh 'ansible-playbook site.yml -i inventory/prod.yml'
+    stages {
+        stage('git clone') {
+            steps {
+                git branch: 'main', credentialsId: 'vm2_vagrant_git', url: 'git@github.com:AirDRoN-lab/ansible-vector-role.git'
+                }
+            }
+        stage('install apps') {
+            steps {
+                sh "pip3 install  'molecule==3.5.2' 'molecule_docker'"
+            }
         }
-        else{
-            echo 'need more action'
+        stage('molecule test') {
+            steps {
+                sh "molecule --version"
+                sh "molecule test -s ubuntu"
+            }
         }
-        
     }
 }
